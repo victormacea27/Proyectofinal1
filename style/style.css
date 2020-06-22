@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif; }
+
+header {
+  width: 100%;
+  position: absolute;
+  height: 44px;
+  top: 0;
+  padding: 16px 16px;
+  /*Menu*/
+  /*checkbox transparente y en primer plano*/
+  /*span -lineas del menu hamburguesa-*/ }
+  header img {
+    float: left; }
+  header nav {
+    float: right;
+    padding-top: 3px; }
+    header nav .menu ul {
+      width: 100%;
+      margin-top: 10px;
+      position: absolute;
+      right: 0;
+      overflow: hidden;
+      list-style: none;
+      background: #0000ec;
+      height: 0; }
+      header nav .menu ul li {
+        position: relative; }
+        header nav .menu ul li:hover {
+          border: 2px solid #fff; }
+      header nav .menu ul a {
+        position: relative;
+        text-decoration: none;
+        color: #fff;
+        padding: 16px 5%;
+        line-height: 10px;
+        display: block;
+        padding-left: 16px;
+        padding-bottom: 24px;
+        padding-top: 16px;
+        font-size: 16px; }
+        header nav .menu ul a:hover {
+          color: #000; }
+    header nav .menu input[type="checkbox"]:checked ~ ul {
+      height: 224px; }
+  header nav .menu input {
+    display: block;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    z-index: 2;
+    position: absolute; }
+  header nav .menu span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #000;
+    z-index: 1;
+    transform-origin: 3px 0px; }
+    header nav .menu span:first-child {
+      transform-origin: 0% 0%; }
+    header nav .menu span:nth-last-child(2) {
+      transform-origin: 0% 100%; }
+  header nav .menu input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(2px, 2px); }
+  header nav .menu input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2); }
+  header nav .menu input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(1px, 0px); }
+
+@media screen and (min-width: 800px) {
+  body {
+    margin: 0; }
+    body header {
+      height: 80px; }
+      body header img {
+        margin-left: 100px;
+        margin-top: 14px;
+        padding: 22px; }
+      body header nav .menu ul {
+        position: relative;
+        overflow: hidden;
+        background: unset;
+        height: 28px;
+        padding: 26px; }
+        body header nav .menu ul li {
+          padding: 5px 10px;
+          display: inline-block; }
+          body header nav .menu ul li:hover {
+            border: none; }
+          body header nav .menu ul li a {
+            padding: unset;
+            line-height: unset;
+            color: black; }
+            body header nav .menu ul li a:hover {
+              border: none;
+              text-decoration: line-through;
+              color: #00F3BB; }
+            body header nav .menu ul li a:active {
+              text-decoration: line-through;
+              color: #00F3BB; }
+    body header nav .menu input {
+      display: none; }
+    body header nav .menu span {
+      display: none; }
+    body .bienvenida {
+      padding-left: 200px;
+      padding-top: 120px; }
+    body .episodios {
+      padding-left: 100px;
+      height: 1040px;
+      padding-top: 0; }
+      body .episodios h1 {
+        padding-left: 189px; }
+      body .episodios .postcast {
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        padding-left: 89px; }
+        body .episodios .postcast .list-postcast {
+          padding-left: 0;
+          padding-right: 72px;
+          padding-bottom: 72px; }
+          body .episodios .postcast .list-postcast .ele-spoti {
+            width: 384px;
+            height: 232px; }
+    body #sectionhistoria {
+      display: flex;
+      flex-direction: row; }
+      body #sectionhistoria #nosotros {
+        width: 497px; }
+      body #sectionhistoria .venimos {
+        margin-top: 200px;
+        width: 464px;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 24px;
+        font-family: "IBM Plex Mono", "SemiBold"; }
+    body .invitados {
+      margin: 0; }
+      body .invitados h2 {
+        padding-left: 200px; }
+      body .invitados #galeria {
+        display: grid;
+        grid-template-columns: 1fr 1fr  1fr;
+        width: 600px; }
+        body .invitados #galeria img {
+          width: 449px;
+          height: 364px; }
+    body .temas {
+      padding: 0; }
+    body .temas h2 {
+      padding-left: 200px; }
+    body .temas .tipos-clasificacion {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 56px;
+      padding-left: 10px; }
+      body .temas .tipos-clasificacion .icono {
+        padding-right: 78px; }
+    body #nov {
+      height: 518px;
+      -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+      clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%); }
+      body #nov #titulonovedades {
+        font-size: 48px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        margin-left: 347px;
+        padding-top: 231px;
+        text-align: left; }
+      body #nov #escuchar {
+        margin-left: 547px;
+        margin-bottom: 151px;
+        font-size: 18px;
+        color: #060A24;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 24px; }
+    body footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 15px;
+      margin-left: 100px;
+      margin-right: 100px; } }
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+  /* Historia*/
+  /* invitados*/
+  /* temas*/
+  /* novedades*/
+  /* novedades*/ }
+  body .bienvenida {
+    margin: 50px 16px 24px 16px; }
+    body .bienvenida h1 {
+      font-size: 36px;
+      color: #060A24;
+      letter-spacing: 0;
+      line-height: 42px; }
+    body .bienvenida p {
+      font-size: 12px;
+      color: #060A24;
+      letter-spacing: 0;
+      line-height: 22px;
+      font-family: "IBM Plex Mono", "SemiBold";
+      padding-right: 16px; }
+    body .bienvenida .conoce {
+      margin-top: 36px;
+      width: 288px;
+      height: 48px;
+      background-color: #00F3BB;
+      font-size: 16px;
+      font-family: "IBM Plex Mono", "SemiBold";
+      color: #060A24;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 24px; }
+      body .bienvenida .conoce:hover {
+        color: #FFF;
+        background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+        font-size: 16px;
+        font-family: "IBM Plex Mono", "SemiBold";
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 24px; }
+  body .episodios {
+    width: 100%;
+    height: 903px;
+    padding-right: 11px;
+    padding-left: 11px;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0% 5%, 100% 0%, 100% 97%, 0% 100%); }
+    body .episodios h1 {
+      font-size: 36px;
+      color: #FFF;
+      letter-spacing: 0;
+      line-height: 42px;
+      padding-top: 64px;
+      padding-bottom: 21px;
+      margin-left: 16px; }
+    body .episodios .postcast {
+      padding-bottom: 0;
+      /* Revisar espacio entre postcast*/ }
+      body .episodios .postcast .ele-spoti {
+        width: 298px;
+        height: 160px; }
+  body .historia {
+    position: relative;
+    z-index: 1;
+    top: -95.5px;
+    display: flex;
+    flex-direction: column; }
+    body .historia .imagen-phone {
+      width: 100%;
+      min-width: 320px;
+      min-height: 519px;
+      margin-bottom: 27px;
+      margin-left: 1px; }
+    body .historia .venimos {
+      margin-left: 16px; }
+      body .historia .venimos h2 {
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        font-family: "IBM Plex Sans"; }
+      body .historia .venimos p {
+        font-size: 14px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 22px;
+        margin-top: 8px;
+        font-family: "IBM Plex Mono", "SemiBold"; }
+  body .invitados h2 {
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    margin-left: 16px;
+    margin-bottom: 14px; }
+  body .invitados .fotos {
+    display: flex;
+    flex-direction: column; }
+    body .invitados .fotos img {
+      width: 320px;
+      height: 243px; }
+  body .temas h2 {
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    margin-top: 48px;
+    margin-bottom: 37px;
+    margin-left: 16px;
+    font-family: "IBM Plex Sans"; }
+  body .temas .tipos-clasificacion {
+    text-align: center; }
+    body .temas .tipos-clasificacion .icono {
+      padding: 13px 108px; }
+    body .temas .tipos-clasificacion .tituloFigura {
+      font-family: "IBM Plex Sans", "SemiBold";
+      font-size: 24px;
+      color: #060A24;
+      letter-spacing: 0;
+      text-align: center;
+      padding: 0 16px 49px 16px; }
+  body .novedades {
+    position: relative;
+    width: 100%;
+    height: 341px;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%); }
+    body .novedades h2 {
+      font-size: 36px;
+      color: #FFF;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 42px;
+      padding-top: 64px;
+      margin-left: 16px; }
+    body .novedades button {
+      margin-top: 36px;
+      width: 288px;
+      height: 48px;
+      background-color: #00F3BB;
+      font-size: 16px;
+      margin-left: 16px; }
+      body .novedades button:hover {
+        color: #FFF;
+        background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); }
+  body .pie {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px; }
+    body .pie p {
+      font-size: 14px;
+      color: #060A24;
+      letter-spacing: 0;
+      line-height: 22px;
+      margin-top: 24px; }
+    body .pie .redes {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-left: 45px;
+      margin-top: 16px; }
+      body .pie .redes .fab {
+        padding-right: 38px;
+        background-image: black; }
+
+/*# sourceMappingURL=style.css.map */

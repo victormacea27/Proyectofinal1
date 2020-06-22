@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: $font-title;
+
+    .bienvenida{
+        margin: 50px 16px 24px 16px;
+        h1{
+            font-size: 36px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 42px;
+        }
+        p{
+            font-size: 12px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 22px;
+            font-family: $font-titleMono;
+            padding-right: 16px;
+        }
+        .conoce{
+            margin-top: 36px;
+            width: 288px;
+            height: 48px;
+            background-color: #00F3BB;
+            font-size: 16px;
+            font-family: $font-titleMono;
+            color: #060A24;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 24px;
+            &:hover{
+                color: #FFF;
+                background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+                font-size: 16px;
+                font-family: $font-titleMono;
+                letter-spacing: 0;
+                text-align: center;
+                line-height: 24px;
+            }
+        }
+    }
+    .episodios{
+        width: 100%;
+        height: 903px;
+        padding-right: 11px;
+        padding-left: 11px;
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        clip-path: polygon(0% 5%, 100% 0%, 100% 97%, 0% 100%);
+        
+        h1{
+            font-size: 36px;
+            color: #FFF;
+            letter-spacing: 0;
+            line-height: 42px;
+            padding-top: 64px;
+            padding-bottom: 21px;
+            margin-left: 16px;
+        }
+
+        .postcast{
+            padding-bottom: 0;
+            /* Revisar espacio entre postcast*/
+
+            .ele-spoti{
+                width: 298px;
+                height: 160px;
+            }
+        }
+    }
+       /* Historia*/
+    .historia{
+        position: relative;
+        z-index: 1;
+        top: -95.5px;
+        display: flex;
+        flex-direction: column;
+
+        .imagen-phone {
+            width: 100%;
+            min-width: 320px;
+            min-height: 519px;
+            margin-bottom: 27px;
+            margin-left: 1px;
+        }
+        .venimos{
+            margin-left: 16px;
+            h2{
+                font-size: 36px;
+                color: #060A24;
+                letter-spacing: 0;
+                line-height: 42px;
+                font-family: $font-titleSans;
+            }
+            p{
+                font-size: 14px;
+                color: #060A24;
+                letter-spacing: 0;
+                line-height: 22px; 
+                margin-top: 8px;
+                font-family: $font-titleMono;
+            }
+        }
+    }
+        /* invitados*/
+    .invitados{
+        h2{
+            font-size: 36px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 42px;
+            margin-left: 16px;
+            margin-bottom: 14px;
+        }
+        .fotos{
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 320px;
+                height: 243px;
+            }
+        }
+
+    }
+        /* temas*/
+    .temas{
+        h2{
+            font-size: 36px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 42px; 
+            margin-top: 48px;
+            margin-bottom: 37px;
+            margin-left: 16px;
+            font-family: $font-titleSans;
+        }
+        .tipos-clasificacion{
+            text-align: center;
+
+            .icono{
+                padding: 13px 108px;
+            }
+            
+            .tituloFigura{
+                font-family: $font-title2;
+                font-size: 24px;
+                color: #060A24;
+                letter-spacing: 0;
+                text-align: center;
+                padding: 0 16px 49px 16px;
+            }
+        }
+    }
+        /* novedades*/
+    .novedades{
+        position: relative;
+        width: 100%;
+        height: 341px;
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+        h2{
+            font-size: 36px;
+            color: #FFF;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 42px;
+            padding-top: 64px;
+            margin-left: 16px;
+        }
+        button{
+            margin-top: 36px;
+            width: 288px;
+            height: 48px;
+            background-color: #00F3BB;
+            font-size: 16px;
+            margin-left: 16px;
+            &:hover{
+                color: #FFF;
+                background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+            }
+        }
+    }
+    /* novedades*/
+    .pie{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 50px;
+        p{
+            font-size: 14px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 22px;
+            margin-top: 24px;
+        }
+        .redes{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-left: 45px;
+            margin-top: 16px;
+            .fab{
+                padding-right: 38px;
+                background-image: black;
+            }
+        }
+    }
+}

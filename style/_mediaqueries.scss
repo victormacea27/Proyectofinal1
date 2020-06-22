@@ -1,0 +1,161 @@
+@media screen and (min-width: 800px){
+    body{
+        margin: 0;
+        header{
+            height: 80px;
+            img{
+                margin-left: 100px;
+                margin-top: 14px;
+                padding: 22px;
+            }
+            nav .menu ul {
+                position: relative;
+                overflow: hidden;
+                background: unset;
+                height: 28px;
+                padding: 26px;
+                li {
+                    padding: 5px 10px;
+                    display: inline-block;
+                &:hover{
+                    border:none;
+
+                }
+                    a{
+                        padding: unset;
+                        line-height: unset;
+                        color: black;
+                        &:hover{
+                            border:none;
+                            text-decoration: line-through;
+                            color: #00F3BB;
+        
+                        }   
+                        &:active{
+                            text-decoration: line-through;
+                            color: #00F3BB;
+                        }
+                    }
+                } 
+            }
+        }
+        header nav .menu {
+                        input {
+                                display: none;
+                        }
+                        span {
+                                display: none;
+                        }
+        }
+        .bienvenida{
+            padding-left: 200px;
+            padding-top: 120px;
+
+        }
+        .episodios{
+            padding-left: 100px;
+            height: 1040px;
+            padding-top: 0;
+            h1{
+                padding-left: 189px;
+            }
+            .postcast{
+                position: relative;
+                display: flex;
+                flex-flow: row wrap;
+                padding-left: 89px;
+                
+                .list-postcast{
+                    padding-left: 0;
+                    padding-right: 72px; 
+                    padding-bottom: 72px;
+                    .ele-spoti{
+                        width: 384px;
+                        height: 232px;
+                        
+                    }
+                }
+
+            }
+
+        }
+        #sectionhistoria{
+            display: flex;
+            flex-direction: row;
+            #nosotros {
+                width: 497px;
+            }
+            .venimos{
+                margin-top: 200px;
+                width: 464px;
+                font-size: 16px;
+                color: #060A24;
+                letter-spacing: 0;
+                line-height: 24px;
+                font-family: $font-titleMono;
+            }
+        }
+        .invitados {
+            margin: 0;
+            h2{
+               padding-left: 200px;
+            }
+            #galeria{
+                display: grid;
+                grid-template-columns: 1fr 1fr  1fr;
+                width: 600px;
+                img{
+                    width: 449px;
+                    height: 364px;
+                }
+            }
+        }
+        .temas{
+            padding: 0;
+        }
+        .temas h2{
+            padding-left: 200px;
+        }
+        .temas .tipos-clasificacion{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 56px;
+            padding-left: 10px;
+
+            .icono{
+                padding-right: 78px;
+            }
+        }
+        #nov{
+            height: 518px;
+            -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);   
+        #titulonovedades{
+                font-size: 48px;
+                color: #FFFFFF;
+                letter-spacing: 0;
+                margin-left: 347px;
+                padding-top: 231px;
+                text-align: left;
+            }
+            #escuchar{
+                margin-left: 547px;
+                margin-bottom: 151px;
+                font-size: 18px;
+                color: #060A24;
+                letter-spacing: 0;
+                text-align: center;
+                line-height: 24px;
+            }
+        }
+        footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 15px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+    }
+}
