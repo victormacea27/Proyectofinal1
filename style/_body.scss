@@ -22,6 +22,9 @@ body {
             line-height: 22px;
             font-family: $font-titleMono;
             padding-right: 16px;
+            span{
+                display: none;
+            }
         }
         .conoce{
             margin-top: 36px;
@@ -61,7 +64,7 @@ body {
             padding-bottom: 21px;
             margin-left: 16px;
         }
-        .postcast{
+        .podcast{
             padding-bottom: 0;
             .ele-spoti{
                 width: 298px;

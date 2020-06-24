@@ -3,19 +3,22 @@
         margin: 0;
         header{
             height: 80px;
+            padding:0;
             img{
-                margin-left: 100px;
-                margin-top: 14px;
+                margin-left: 78px;
+                margin-top: 10px;
                 padding: 22px;
             }
             nav .menu ul {
+                margin-right: 74px;
+                margin-top: 0;
                 position: relative;
                 overflow: hidden;
                 background: unset;
                 height: 28px;
                 padding: 26px;
                 li {
-                    padding: 5px 10px;
+                    padding: 0px 24px;
                     display: inline-block;
                 &:hover{
                     border:none;
@@ -23,17 +26,20 @@
                 }
                     a{
                         padding: unset;
-                        line-height: unset;
-                        color: black;
+                        font-size: 16px;
+                        color: $color-black-blue;
+                        letter-spacing: 0;
+                        line-height: 28px;
+                        font-family: $font-titleMono;
                         &:hover{
                             border:none;
                             text-decoration: line-through;
-                            color: #00F3BB;
+                            color: $color-green-blue;
         
                         }   
                         &:active{
                             text-decoration: line-through;
-                            color: #00F3BB;
+                            color: $color-green-blue;
                         }
                     }
                 } 
@@ -50,6 +56,21 @@
         .bienvenida{
             padding-left: 200px;
             padding-top: 120px;
+            #parrafo-inicial{
+                    width: 628px;
+                    font-size: 16px;
+                    color: $color-black-blue;
+                    letter-spacing: 0;
+                    line-height: 24px;
+                    font-family: $font-titleMono;
+                    
+                }
+            #tecnologia{
+                display: initial;
+                font-size: 16px;
+                color: $color-black-blue;
+                font-family: $font-titleMono;
+            }
 
         }
         .episodios{
@@ -59,11 +80,12 @@
             h1{
                 padding-left: 189px;
             }
-            .postcast{
+            .podcast{
                 position: relative;
                 display: flex;
                 flex-flow: row wrap;
                 padding-left: 89px;
+                justify-content: space-between; /*Se le agrego nuevo*/
                 
                 .list-postcast{
                     padding-left: 0;
@@ -89,7 +111,7 @@
                 margin-top: 200px;
                 width: 464px;
                 font-size: 16px;
-                color: #060A24;
+                color: $color-black-blue;
                 letter-spacing: 0;
                 line-height: 24px;
                 font-family: $font-titleMono;
@@ -143,7 +165,7 @@
                 margin-left: 547px;
                 margin-bottom: 151px;
                 font-size: 18px;
-                color: #060A24;
+                color: $color-black-blue;
                 letter-spacing: 0;
                 text-align: center;
                 line-height: 24px;

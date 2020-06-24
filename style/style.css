@@ -46,7 +46,7 @@ header {
         padding-top: 16px;
         font-size: 16px; }
         header nav .menu ul a:hover {
-          color: #000; }
+          color: #fff; }
     header nav .menu input[type="checkbox"]:checked ~ ul {
       height: 224px; }
   header nav .menu input {
@@ -82,26 +82,32 @@ header {
   body {
     margin: 0; }
     body header {
-      height: 80px; }
+      height: 80px;
+      padding: 0; }
       body header img {
-        margin-left: 100px;
-        margin-top: 14px;
+        margin-left: 78px;
+        margin-top: 10px;
         padding: 22px; }
       body header nav .menu ul {
+        margin-right: 74px;
+        margin-top: 0;
         position: relative;
         overflow: hidden;
         background: unset;
         height: 28px;
         padding: 26px; }
         body header nav .menu ul li {
-          padding: 5px 10px;
+          padding: 0px 24px;
           display: inline-block; }
           body header nav .menu ul li:hover {
             border: none; }
           body header nav .menu ul li a {
             padding: unset;
-            line-height: unset;
-            color: black; }
+            font-size: 16px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 28px;
+            font-family: "IBM Plex Mono", "SemiBold"; }
             body header nav .menu ul li a:hover {
               border: none;
               text-decoration: line-through;
@@ -116,22 +122,36 @@ header {
     body .bienvenida {
       padding-left: 200px;
       padding-top: 120px; }
+      body .bienvenida #parrafo-inicial {
+        width: 628px;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 24px;
+        font-family: "IBM Plex Mono", "SemiBold"; }
+      body .bienvenida #tecnologia {
+        display: initial;
+        font-size: 16px;
+        color: #060A24;
+        font-family: "IBM Plex Mono", "SemiBold"; }
     body .episodios {
       padding-left: 100px;
       height: 1040px;
       padding-top: 0; }
       body .episodios h1 {
         padding-left: 189px; }
-      body .episodios .postcast {
+      body .episodios .podcast {
         position: relative;
         display: flex;
         flex-flow: row wrap;
-        padding-left: 89px; }
-        body .episodios .postcast .list-postcast {
+        padding-left: 89px;
+        justify-content: space-between;
+        /*Se le agrego nuevo*/ }
+        body .episodios .podcast .list-postcast {
           padding-left: 0;
           padding-right: 72px;
           padding-bottom: 72px; }
-          body .episodios .postcast .list-postcast .ele-spoti {
+          body .episodios .podcast .list-postcast .ele-spoti {
             width: 384px;
             height: 232px; }
     body #sectionhistoria {
@@ -223,6 +243,8 @@ body {
       line-height: 22px;
       font-family: "IBM Plex Mono", "SemiBold";
       padding-right: 16px; }
+      body .bienvenida p span {
+        display: none; }
     body .bienvenida .conoce {
       margin-top: 36px;
       width: 288px;
@@ -257,9 +279,9 @@ body {
       padding-top: 64px;
       padding-bottom: 21px;
       margin-left: 16px; }
-    body .episodios .postcast {
+    body .episodios .podcast {
       padding-bottom: 0; }
-      body .episodios .postcast .ele-spoti {
+      body .episodios .podcast .ele-spoti {
         width: 298px;
         height: 160px; }
   body .historia {
