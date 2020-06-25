@@ -12,7 +12,7 @@ header {
   position: absolute;
   height: 44px;
   top: 0;
-  padding: 16px 16px;
+  padding: 10px 19px 16px 16px;
   /*Menu*/
   /*checkbox*/
   /*lineas del menu*/ }
@@ -107,7 +107,7 @@ header {
             color: #060A24;
             letter-spacing: 0;
             line-height: 28px;
-            font-family: "IBM Plex Mono", "SemiBold"; }
+            font-family: "IBM Plex Mono"; }
             body header nav .menu ul li a:hover {
               border: none;
               text-decoration: line-through;
@@ -122,18 +122,20 @@ header {
     body .bienvenida {
       padding-left: 200px;
       padding-top: 120px; }
+      body .bienvenida br {
+        display: none; }
       body .bienvenida #parrafo-inicial {
         width: 628px;
         font-size: 16px;
         color: #060A24;
         letter-spacing: 0;
         line-height: 24px;
-        font-family: "IBM Plex Mono", "SemiBold"; }
+        font-family: "IBM Plex Mono"; }
       body .bienvenida #tecnologia {
         display: initial;
         font-size: 16px;
         color: #060A24;
-        font-family: "IBM Plex Mono", "SemiBold"; }
+        font-family: "IBM Plex Mono"; }
     body .episodios {
       padding-left: 100px;
       height: 1040px;
@@ -166,7 +168,7 @@ header {
         color: #060A24;
         letter-spacing: 0;
         line-height: 24px;
-        font-family: "IBM Plex Mono", "SemiBold"; }
+        font-family: "IBM Plex Mono"; }
     body .invitados {
       margin: 0; }
       body .invitados h2 {
@@ -235,32 +237,37 @@ body {
       font-size: 36px;
       color: #060A24;
       letter-spacing: 0;
-      line-height: 42px; }
+      line-height: 42px;
+      padding-top: 29px; }
+      body .bienvenida h1 span {
+        text-decoration: line-through; }
     body .bienvenida p {
-      font-size: 12px;
+      width: 100%;
+      font-size: 14px;
       color: #060A24;
       letter-spacing: 0;
       line-height: 22px;
-      font-family: "IBM Plex Mono", "SemiBold";
-      padding-right: 16px; }
+      font-family: "IBM Plex Mono";
+      text-align: justify;
+      padding-top: 16px; }
       body .bienvenida p span {
         display: none; }
     body .bienvenida .conoce {
-      margin-top: 36px;
       width: 288px;
       height: 48px;
       background-color: #00F3BB;
       font-size: 16px;
-      font-family: "IBM Plex Mono", "SemiBold";
+      font-family: "IBM Plex Mono";
       color: #060A24;
       letter-spacing: 0;
       text-align: center;
-      line-height: 24px; }
+      line-height: 24px;
+      margin-top: 36px; }
       body .bienvenida .conoce:hover {
         color: #FFF;
         background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
         font-size: 16px;
-        font-family: "IBM Plex Mono", "SemiBold";
+        font-family: "IBM Plex Mono";
         letter-spacing: 0;
         text-align: center;
         line-height: 24px; }
@@ -278,7 +285,7 @@ body {
       line-height: 42px;
       padding-top: 64px;
       padding-bottom: 21px;
-      margin-left: 16px; }
+      padding-left: 5px; }
     body .episodios .podcast {
       padding-bottom: 0; }
       body .episodios .podcast .ele-spoti {
@@ -297,6 +304,7 @@ body {
       margin-bottom: 27px;
       margin-left: 1px; }
     body .historia .venimos {
+      width: 288px;
       margin-left: 16px; }
       body .historia .venimos h2 {
         font-size: 36px;
@@ -310,7 +318,7 @@ body {
         letter-spacing: 0;
         line-height: 22px;
         margin-top: 8px;
-        font-family: "IBM Plex Mono", "SemiBold"; }
+        font-family: "IBM Plex Mono"; }
   body .invitados h2 {
     font-size: 36px;
     color: #060A24;
@@ -325,25 +333,25 @@ body {
       width: 100%;
       height: 243px; }
   body .temas h2 {
+    width: 288px;
     font-size: 36px;
     color: #060A24;
     letter-spacing: 0;
     line-height: 42px;
-    margin-top: 48px;
-    margin-bottom: 37px;
-    margin-left: 16px;
+    padding: 48px 0 37px 16px;
     font-family: "IBM Plex Sans"; }
   body .temas .tipos-clasificacion {
     text-align: center; }
     body .temas .tipos-clasificacion .icono {
       padding: 13px 108px; }
     body .temas .tipos-clasificacion .tituloFigura {
-      font-family: "IBM Plex Sans", "SemiBold";
       font-size: 24px;
+      font-family: "IBM Plex Sans", "SemiBold";
       color: #060A24;
       letter-spacing: 0;
       text-align: center;
-      padding: 0 16px 49px 16px; }
+      padding: 0 16px 49px 16px;
+      font-weight: bold; }
   body .novedades {
     position: relative;
     width: 100%;
@@ -359,15 +367,20 @@ body {
       padding-top: 64px;
       margin-left: 16px; }
     body .novedades button {
+      font-size: 16px;
+      color: #060A24;
+      font-family: "IBM Plex Mono", "Medium";
       margin-top: 36px;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 22px;
       width: 288px;
       height: 48px;
       background-color: #00F3BB;
-      font-size: 16px;
       margin-left: 16px; }
       body .novedades button:hover {
         color: #FFF;
-        background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); }
+        background-image: linear-gradient(225deg, #0000FE 0%, #00F3BB 100%); }
   body .pie {
     display: flex;
     flex-direction: column;
@@ -375,6 +388,7 @@ body {
     margin-bottom: 50px; }
     body .pie p {
       font-size: 14px;
+      font-family: "IBM Plex Mono";
       color: #060A24;
       letter-spacing: 0;
       line-height: 22px;
@@ -391,5 +405,7 @@ body {
         color: #060A24;
         letter-spacing: 0;
         line-height: 28px; }
+        body .pie .redes .fab:hover {
+          color: #00F3BB; }
 
 /*# sourceMappingURL=style.css.map */

@@ -11,32 +11,39 @@ body {
         margin: 50px 16px 24px 16px;
         h1{
             font-size: 36px;
-            color: #060A24;
+            color: $color-black-blue;
             letter-spacing: 0;
             line-height: 42px;
+            padding-top: 29px;
+            span{
+                text-decoration: line-through;
+            }
         }
         p{
-            font-size: 12px;
-            color: #060A24;
+            width: 100%;
+            font-size: 14px;
+            color: $color-black-blue;
             letter-spacing: 0;
             line-height: 22px;
             font-family: $font-titleMono;
-            padding-right: 16px;
+            text-align: justify;
+            padding-top: 16px;
+            
             span{
                 display: none;
             }
         }
         .conoce{
-            margin-top: 36px;
             width: 288px;
             height: 48px;
             background-color: #00F3BB;
             font-size: 16px;
             font-family: $font-titleMono;
-            color: #060A24;
+            color: $color-black-blue;
             letter-spacing: 0;
             text-align: center;
             line-height: 24px;
+            margin-top: 36px;
             &:hover{
                 color: #FFF;
                 background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
@@ -62,7 +69,7 @@ body {
             line-height: 42px;
             padding-top: 64px;
             padding-bottom: 21px;
-            margin-left: 16px;
+            padding-left: 5px;
         }
         .podcast{
             padding-bottom: 0;
@@ -88,17 +95,18 @@ body {
             margin-left: 1px;
         }
         .venimos{
+            width: 288px;
             margin-left: 16px;
             h2{
                 font-size: 36px;
-                color: #060A24;
+                color: $color-black-blue;
                 letter-spacing: 0;
                 line-height: 42px;
                 font-family: $font-titleSans;
             }
             p{
                 font-size: 14px;
-                color: #060A24;
+                color: $color-black-blue;
                 letter-spacing: 0;
                 line-height: 22px; 
                 margin-top: 8px;
@@ -110,7 +118,7 @@ body {
     .invitados{
         h2{
             font-size: 36px;
-            color: #060A24;
+            color: $color-black-blue;
             letter-spacing: 0;
             line-height: 42px;
             margin-left: 16px;
@@ -129,13 +137,13 @@ body {
         /* temas*/
     .temas{
         h2{
+            width: 288px;
             font-size: 36px;
-            color: #060A24;
+            color: $color-black-blue;
             letter-spacing: 0;
             line-height: 42px; 
-            margin-top: 48px;
-            margin-bottom: 37px;
-            margin-left: 16px;
+
+            padding: 48px 0 37px 16px;
             font-family: $font-titleSans;
         }
         .tipos-clasificacion{
@@ -146,12 +154,13 @@ body {
             }
             
             .tituloFigura{
-                font-family: $font-title2;
                 font-size: 24px;
-                color: #060A24;
+                font-family: $font-SansSemiBold;
+                color: $color-black-blue;
                 letter-spacing: 0;
                 text-align: center;
                 padding: 0 16px 49px 16px;
+                font-weight: bold;
             }
         }
     }
@@ -172,15 +181,21 @@ body {
             margin-left: 16px;
         }
         button{
+            font-size: 16px;
+            color: $color-black-blue;
+            font-family: $font-textoMonoMedium;
             margin-top: 36px;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 22px;
             width: 288px;
             height: 48px;
-            background-color: #00F3BB;
-            font-size: 16px;
+            background-color: $color-green-blue;
             margin-left: 16px;
+
             &:hover{
                 color: #FFF;
-                background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+                background-image: linear-gradient(225deg, #0000FE 0%, $color-green-blue 100%);
             }
         }
     }
@@ -192,7 +207,8 @@ body {
         margin-bottom: 50px;
         p{
             font-size: 14px;
-            color: #060A24;
+            font-family: $font-titleMono;
+            color: $color-black-blue;
             letter-spacing: 0;
             line-height: 22px;
             margin-top: 24px;
@@ -206,9 +222,12 @@ body {
             .fab{
                 padding-right: 38px;
                 font-size: 18px;
-                color: #060A24;
+                color: $color-black-blue;
                 letter-spacing: 0;
                 line-height: 28px;
+                &:hover{
+                    color: $color-green-blue;
+                }
             }
         }
     }
