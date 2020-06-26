@@ -6,7 +6,6 @@ body {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: $font-title;
 
     .bienvenida{
         margin: 50px 16px 24px 16px;
@@ -16,6 +15,7 @@ body {
             letter-spacing: 0;
             line-height: 42px;
             padding-top: 29px;
+            font-family: $font-titleSans;
             span{
                 text-decoration: line-through;
             }

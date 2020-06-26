@@ -85,7 +85,6 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "IBM Plex Sans", sans-serif;
   /* Historia*/
   /* invitados*/
   /* temas*/
@@ -98,7 +97,8 @@ body {
       color: #060A24;
       letter-spacing: 0;
       line-height: 42px;
-      padding-top: 29px; }
+      padding-top: 29px;
+      font-family: "IBM Plex Sans"; }
       body .bienvenida h1 span {
         text-decoration: line-through; }
       body .bienvenida h1 #puntotitulo {
@@ -275,7 +275,7 @@ body {
         body .pie .redes .fab:hover {
           color: #00F3BB; }
 
-@media screen and (min-width: 525px) {
+@media screen and (min-width: 825px) {
   body {
     margin: 0;
     /* Historia*/
