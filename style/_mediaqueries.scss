@@ -1,4 +1,4 @@
-@media screen and (min-width: 800px){
+@media screen and (min-width: 525px){
     body{
         margin: 0;
         header{
@@ -56,6 +56,16 @@
         .bienvenida{
             padding-left: 200px;
             padding-top: 120px;
+            h1{
+                font-size: 64px;
+                color: $color-black-blue;
+                letter-spacing: 0;
+                font-family: $font-titleSans;
+                #puntotitulo{
+                    text-decoration: none;
+                    color: #0000EC;
+                }
+            }
             br{ 
                 display: none; 
             }
@@ -74,113 +84,168 @@
                 color: $color-black-blue;
                 font-family: $font-titleMono;
             }
-
+            .conoce{
+                margin-top: 56px;
+                font-size: 18px;
+                letter-spacing: 0;
+                text-align: center;
+                line-height: 24px;
+                color: $color-black-blue;
+                font-family: $font-textoMonoMedium;
+                &:hover{
+                    font-size: 18px;
+                }
+            }
         }
         .episodios{
-            padding-left: 100px;
-            height: 1040px;
-            padding-top: 0;
+            padding-left: 0;
+            padding-right: 0;
+            height: 1042.6px;
+            width: 1440px;
+            clip-path: polygon(0% 5%, 100% 0%, 100% 83%, 0% 100%); 
             h1{
-                padding-left: 189px;
+                margin-left: 200px;
+                padding-top: 186px;
+                padding-bottom: 26px;
+                font-size: 48px;
+                color: #FFFFFF;
+                letter-spacing: 0;
+                font-family: $font-titleSans;
             }
             .podcast{
-                position: relative;
-                display: flex;
-                flex-flow: row wrap;
-                padding-left: 89px;
-                justify-content: space-between; /*Se le agrego nuevo*/
-                
-                .list-postcast{
-                    padding-left: 0;
-                    padding-right: 72px; 
-                    padding-bottom: 72px;
+                display: grid;
+                grid-template-columns: 656px 584px;
+                margin-left: 100px;
+                margin-right: 100px;
+                .list-podcast{  
+                    width: 584px;
+                    height: 232px;
+                    margin-right: 72px;
+                    margin-bottom: 72px;
+                    padding: 0;
                     .ele-spoti{
-                        width: 384px;
-                        height: 232px;
                         
+                        width: 100%;
                     }
                 }
-
             }
 
         }
-        #sectionhistoria{
+        /* Historia*/
+        .historia{
             display: flex;
             flex-direction: row;
-            #nosotros {
-                width: 497px;
+            top: -190px;
+            .imagen-phone{
+                width: 457.6px;
+                height: 606;
+                margin-left: 200px;
+                margin-right: 62.4px;
             }
             .venimos{
+                width: 399px;
                 margin-top: 200px;
-                width: 464px;
-                font-size: 16px;
+                font-size: 48px;
                 color: $color-black-blue;
                 letter-spacing: 0;
-                line-height: 24px;
-                font-family: $font-titleMono;
+                font-family: $font-titleSans;
             }
+                    #textoVenimos{  
+                        width: 464px;
+                        height: 204px;
+                        font-size: 16px;
+                        color: $color-black-blue;
+                        line-height: 24px;
+                        font-family: $font-titleMono;
+                    }
         }
+        /* Invitados*/
         .invitados {
             margin: 0;
             h2{
-               padding-left: 200px;
+               margin-left: 200px;
+               margin-bottom: 36px;
             }
-            #galeria{
+            .fotos{
                 display: grid;
-                grid-template-columns: 1fr 1fr  1fr;
-                width: 600px;
+                grid-template-columns: 480px 480px  480px;
                 img{
-                    width: 449px;
+                    width: 480px;
                     height: 364px;
                 }
             }
         }
+        /* Temas*/
         .temas{
             padding: 0;
-        }
-        .temas h2{
-            padding-left: 200px;
-        }
-        .temas .tipos-clasificacion{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin-top: 56px;
-            padding-left: 10px;
-
-            .icono{
-                padding-right: 78px;
+            #tituloTemas{
+                width: 986px;
+                padding-left: 200px;
+                font-family: $font-titleSans;
+                font-size: 48px;
+                color: $color-black-blue;
+                letter-spacing: 0;
+            }
+            .tipos-clasificacion{
+                display: flex;
+                flex-direction: row;
+                width: 220px;
+                margin-top: 32px;
+                margin-bottom: 34px;
+                padding-left: 200px;
+                .icono{ 
+                    padding: 0 78px 16px 78px;
+                }
+                .tituloFigura{
+                    height: 64px;
+                    font-size: 24px;
+                    color: $color-black-blue;
+                    font-family: $font-SansSemiBold;
+                    letter-spacing: 0;
+                    text-align: center;
+                }
             }
         }
-        #nov{
+        /* Novedades*/
+        .novedades{
+            width: 1440px;
             height: 518px;
-            -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);   
         #titulonovedades{
+                width: 692px;
                 font-size: 48px;
                 color: #FFFFFF;
                 letter-spacing: 0;
-                margin-left: 347px;
-                padding-top: 231px;
+                margin-left: 374px;
+                padding-top: 213px;
                 text-align: left;
+                font-family: $font-titleSans;
             }
             #escuchar{
+                width: 345px;
+                height: 56px;
                 margin-left: 547px;
                 margin-bottom: 151px;
                 font-size: 18px;
                 color: $color-black-blue;
+                font-family: $font-textoMonoMedium;
                 letter-spacing: 0;
                 text-align: center;
                 line-height: 24px;
+                &:hover{
+                    color: #FFFFFF;
+                }
             }
         }
+        /* footer*/
         footer{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             padding-top: 15px;
             margin-left: 100px;
-            margin-right: 100px;
+            margin-right: 62px;
         }
     }
 }
+

@@ -27,44 +27,43 @@
         </nav>
     </header>
     <section class="bienvenida">
-        <h1>Hello <span>world</span> <br> pale blue dot.</h1>
+        <h1>Hello <span>world</span> <br> pale blue dot<span id="puntotitulo">.</span></h1>
         <p id="parrafo-inicial">Un podcast que explora el mundo de la programación<span id="tecnologia"> y la tecnología</span>. Nuevos episodios, todos los jueves cada 15 días.</p>
         <button class="conoce">CONOCÉ MÁS</button>
     </section>
-    <section class="episodios" id="listaepisodio">
+    <section class="episodios">
         <div>
             <h1>Episodios</h1>
         </div>
         <div class="podcast">
-            <div class="list-postcast">
-                <iframe tabindex="8" class="ele-spoti" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"></iframe>
+            <div class="list-podcast">
+                <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" frameborder="0" allowtransparency="true" allow="encrypted-media" class="ele-spoti uno"></iframe>
             </div>
-            <div class="postcast list-postcast">
-                <iframe tabindex="8" class="ele-spoti" src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby"></iframe>
+            <div class="list-podcast">
+                <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" frameborder="0" allowtransparency="true" allow="encrypted-media" class="ele-spoti" id="uno"></iframe>
             </div>
-            <div class="postcast list-postcast">
-                <iframe tabindex="8" class="ele-spoti" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv"></iframe>
+            <div class="list-podcast">
+                <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" frameborder="0" allowtransparency="true" allow="encrypted-media" class="ele-spoti tres" ></iframe>
             </div>
-            <div class="postcast list-postcast">
-                <iframe tabindex="8" class="ele-spoti" src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"></iframe>
+            <div class="list-podcast">
+                <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" frameborder="0" allowtransparency="true" allow="encrypted-media" class="ele-spoti cuatro"></iframe>
             </div>
 
         </div>
     </section>
-    <section class="historia" id="sectionhistoria">
-                <img id="nosotros" class="imagen-phone" src="img/phone.png" alt="Imagen de mujer">
-
+    <section class="historia">
+                <img class="imagen-phone" src="img/phone.png" alt="Imagen de mujer">
             <div class="venimos">
                 <h2>De dónde venimos</h2>
-                <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. 
+                <p id="textoVenimos">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. 
                 <br>
                 <br>
                 Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves..</p>
             </div>
     </section>
-    <section class="invitados" id="entrevista">
+    <section class="invitados">
         <h2>Invitadas/os estelares</h2>
-        <div class="fotos" id="galeria">
+        <div class="fotos">
             <img src="img/grace-hopper.png" alt="grace-hopper">
             <img src="img/Katie-Bouman.png" alt="Katie-Bouman">
             <img src="img/Margaret_Hamilton.png" alt="Margaret_Hamilton">
@@ -74,7 +73,7 @@
         </div>
     </section>
     <section class="temas" id="topicos">
-        <h2>Algunos de nuestros temas</h2>
+        <h2 id="tituloTemas">Algunos de nuestros temas</h2>
         <div class="tipos-clasificacion">
                 <figure>
                     <img src="img/icon1.svg" alt="Trabajo remoto" class="icono">
@@ -85,11 +84,11 @@
                     <figcaption class="tituloFigura">Repensando la programación</figcaption>  
                 </figure>
                 <figure>
-                    <img src="img/icon3.svg" alt="Bases del codigo" class="icono">
+                    <img src="img/icon3.svg" alt="Bases del codigo" class="icono" >
                     <figcaption class="tituloFigura">Bases del código</figcaption>  
                 </figure>
                 <figure>
-                    <img src="img/icon4.svg" alt="Seguridad informatica" class="icono">
+                    <img src="img/icon4.svg" alt="Seguridad informatica" class="icono"> 
                     <figcaption class="tituloFigura">Seguridad informática</figcaption>  
                 </figure>
         </div>
@@ -101,8 +100,8 @@
     <section class="pie">
         <footer>
             <p>© 2019— Hello blue pale dot</p>
-            <div class="redes">
-                <a href="#"><i class="fab fa-spotify"></i></a>
+            <div class="redes" >
+                <a href="#"><i class="fab fa-spotify" id="reduno"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-facebook"></i></a>

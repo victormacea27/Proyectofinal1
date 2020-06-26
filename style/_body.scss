@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -17,6 +18,9 @@ body {
             padding-top: 29px;
             span{
                 text-decoration: line-through;
+            }
+            #puntotitulo{
+                text-decoration: none;
             }
         }
         p{
@@ -57,7 +61,7 @@ body {
     }
     .episodios{
         width: 100%;
-        height: 903px;
+        height: 1203.5px;
         padding-right: 11px;
         padding-left: 11px;
         background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
@@ -70,13 +74,19 @@ body {
             padding-top: 64px;
             padding-bottom: 21px;
             padding-left: 5px;
+            font-family: $font-titleSans;
         }
         .podcast{
             padding-bottom: 0;
-            .ele-spoti{
-                width: 298px;
-                height: 160px;
-            }
+            .list-podcast{  
+                padding-bottom: 11px;
+                .ele-spoti{
+                    padding-left: 5px;
+                    width: 298px;
+                    height: 225px;
+                    border-radius: 10px;
+                }
+            } 
         }
     }
        /* Historia*/
@@ -128,7 +138,7 @@ body {
             display: flex;
             flex-direction: column;
             img{
-                width: 100%;
+                width: 320px;
                 height: 243px;
             }
         }
@@ -142,7 +152,6 @@ body {
             color: $color-black-blue;
             letter-spacing: 0;
             line-height: 42px; 
-
             padding: 48px 0 37px 16px;
             font-family: $font-titleSans;
         }
@@ -199,7 +208,7 @@ body {
             }
         }
     }
-    /* novedades*/
+    /* Footer*/
     .pie{
         display: flex;
         flex-direction: column;
