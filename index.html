@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProyectoFinal</title>
+    <title>PodcastChannel</title>
     <link rel="stylesheet" href="style/style.css">
     <script src="https://kit.fontawesome.com/ed9a51d47c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500;600&family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
@@ -31,27 +31,26 @@
         <p id="parrafo-inicial"> <span id="texto-movil">Un podcast que explora el mundo de la programación</span><span id="texto-escritorio">El portal de podcasts que explora el mundo de la programación y la tecnología</span>. Nuevos episodios, todos los jueves cada 15 días.</p>
         <button class="conoce">CONOCÉ MÁS</button>
     </section>
-    <section class="episodios">
+    <section class="episodios" id="listaepisodio">
         <div>
             <h1>Episodios</h1>
         </div>
         <div class="podcast">
             <div class="list-podcast">
-                <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"  frameborder="0" allowtransparency="true" allow="encrypted-media" class="ele-spoti"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" allow="encrypted-media" class="ele-spoti"></iframe>
             </div>
             <div class="list-podcast">
-                <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" frameborder="0" allowtransparency="true" allow="encrypted-media" class="ele-spoti"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" allow="encrypted-media" class="ele-spoti"></iframe>
             </div>
             <div class="list-podcast">
-                <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" frameborder="0" allowtransparency="true" allow="encrypted-media" class="ele-spoti"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" allow="encrypted-media" class="ele-spoti"></iframe>
             </div>
             <div class="list-podcast">
-                <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" frameborder="0" allowtransparency="true" allow="encrypted-media" class="ele-spoti"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" allow="encrypted-media" class="ele-spoti"></iframe>
             </div>
-
         </div>
     </section>
-    <section class="historia">
+    <section class="historia" id="sectionhistoria">
                 <img class="imagen-phone" src="img/phone.png" alt="Imagen de mujer">
             <div class="venimos">
                 <h2>De dónde venimos</h2>
@@ -61,14 +60,14 @@
                 Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
             </div>
     </section>
-    <section class="invitados">
+    <section class="invitados" id="entrevista">
         <h2>Invitadas/os estelares</h2>
         <div class="fotos">
             <img src="img/grace-hopper.png" alt="grace-hopper">
             <img src="img/Katie-Bouman.png" alt="Katie-Bouman">
             <img src="img/Margaret_Hamilton.png" alt="Margaret_Hamilton">
-            <img src="img/An E.R.A.Univac 1103 computer in the 1950s.png" alt="computer1950">
-            <img src="img/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Computeroperators">
+            <img src="img/computer-in-the-1950s.png" alt="computer1950">
+            <img src="img/Computer-operators-with-an-Eniac.png" alt="Computeroperators">
             <img src="img/susan-kare.png" alt="susan-kare">
         </div>
     </section>
@@ -97,8 +96,8 @@
         <h2 id="titulonovedades">¿Querés las últimas novedades?</h2>
         <button id="escuchar">ESCUCHÁ LOS EPISODIO</button>
     </section>
-    <section class="pie">
-        <footer>
+    <div class="pie">
+        <footer id="piepagina">
             <p>© 2019— Hello blue pale dot</p>
             <div class="redes" >
                 <a href="#"><i class="fab fa-spotify" id="reduno"></i></a>
@@ -108,6 +107,6 @@
                 <a href="#"><i class="fab fa-telegram"></i></a>
             </div>
         </footer>
-    </section>
+    </div>
 </body>
 </html>
