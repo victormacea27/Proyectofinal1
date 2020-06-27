@@ -1,6 +1,7 @@
 @media screen and (min-width: 825px){
     body{
         margin: 0;
+        /* Encabezado*/
         header{
             height: 80px;
             padding:0;
@@ -53,6 +54,7 @@
                                 display: none;
                         }
         }
+        /* Bienvenida*/
         .bienvenida{
             padding-left: 200px;
             padding-top: 120px;
@@ -97,6 +99,7 @@
                 }
             }
         }
+         /* Episodio*/
         .episodios{
             padding-left: 0;
             padding-right: 0;

@@ -78,17 +78,15 @@ body {
         }
         .podcast{
             padding-bottom: 0;
-            .list-podcast{  
-
+            .list-podcast{
+                margin-bottom: 11px;
                 width: 298px;
                 height: 225px;
-
-                border-radius: 10px;
-                .ele-spoti{
-                    height: 100%;
+                iframe{
+                    height: 232px;
                     width: 100%;
                 }
-            } 
+            }
         }
     }
        /* Historia*/

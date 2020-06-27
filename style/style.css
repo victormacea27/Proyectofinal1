@@ -152,11 +152,11 @@ body {
     body .episodios .podcast {
       padding-bottom: 0; }
       body .episodios .podcast .list-podcast {
+        margin-bottom: 11px;
         width: 298px;
-        height: 225px;
-        border-radius: 10px; }
-        body .episodios .podcast .list-podcast .ele-spoti {
-          height: 100%;
+        height: 225px; }
+        body .episodios .podcast .list-podcast iframe {
+          height: 232px;
           width: 100%; }
   body .historia {
     position: relative;
@@ -278,6 +278,9 @@ body {
 @media screen and (min-width: 825px) {
   body {
     margin: 0;
+    /* Encabezado*/
+    /* Bienvenida*/
+    /* Episodio*/
     /* Historia*/
     /* Invitados*/
     /* Temas*/
