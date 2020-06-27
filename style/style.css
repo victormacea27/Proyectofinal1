@@ -152,12 +152,12 @@ body {
     body .episodios .podcast {
       padding-bottom: 0; }
       body .episodios .podcast .list-podcast {
-        padding-bottom: 11px; }
+        width: 298px;
+        height: 225px;
+        border-radius: 10px; }
         body .episodios .podcast .list-podcast .ele-spoti {
-          padding-left: 5px;
-          width: 298px;
-          height: 225px;
-          border-radius: 10px; }
+          height: 100%;
+          width: 100%; }
   body .historia {
     position: relative;
     z-index: 1;
@@ -382,6 +382,7 @@ body {
           margin-bottom: 72px;
           padding: 0; }
           body .episodios .podcast .list-podcast .ele-spoti {
+            height: 100%;
             width: 100%; }
     body .historia {
       display: flex;

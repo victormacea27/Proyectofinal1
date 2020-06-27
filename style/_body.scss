@@ -79,12 +79,14 @@ body {
         .podcast{
             padding-bottom: 0;
             .list-podcast{  
-                padding-bottom: 11px;
+
+                width: 298px;
+                height: 225px;
+
+                border-radius: 10px;
                 .ele-spoti{
-                    padding-left: 5px;
-                    width: 298px;
-                    height: 225px;
-                    border-radius: 10px;
+                    height: 100%;
+                    width: 100%;
                 }
             } 
         }
