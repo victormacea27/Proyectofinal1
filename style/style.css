@@ -110,9 +110,15 @@ body {
       letter-spacing: 0;
       line-height: 22px;
       font-family: "IBM Plex Mono";
-      text-align: justify;
-      padding-top: 16px; }
-      body .bienvenida p span {
+      text-align: justify; }
+      body .bienvenida p #texto-movil {
+        display: initial;
+        font-family: "IBM Plex Mono";
+        font-size: 14px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 22px; }
+      body .bienvenida p #texto-escritorio {
         display: none; }
     body .bienvenida .conoce {
       width: 288px;
@@ -252,7 +258,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 50px; }
+    margin-bottom: 31px; }
     body .pie p {
       font-size: 14px;
       font-family: "IBM Plex Mono";
@@ -287,6 +293,7 @@ body {
     /* Novedades*/
     /* footer*/ }
     body header {
+      width: 100%;
       height: 80px;
       padding: 0; }
       body header img {
@@ -328,6 +335,7 @@ body {
       padding-left: 200px;
       padding-top: 120px; }
       body .bienvenida h1 {
+        height: 84px;
         font-size: 64px;
         color: #060A24;
         letter-spacing: 0;
@@ -337,19 +345,24 @@ body {
           color: #0000EC; }
       body .bienvenida br {
         display: none; }
-      body .bienvenida #parrafo-inicial {
+      body .bienvenida p {
         width: 628px;
+        height: 48px;
         font-size: 16px;
         color: #060A24;
         letter-spacing: 0;
         line-height: 24px;
-        font-family: "IBM Plex Mono"; }
-      body .bienvenida #tecnologia {
-        display: initial;
-        font-size: 16px;
-        color: #060A24;
-        font-family: "IBM Plex Mono"; }
+        font-family: "IBM Plex Mono";
+        text-align: justify; }
+        body .bienvenida p #texto-movil {
+          display: none; }
+        body .bienvenida p #texto-escritorio {
+          display: initial;
+          font-size: 16px;
+          color: #060A24;
+          font-family: "IBM Plex Mono"; }
       body .bienvenida .conoce {
+        width: 226px;
         margin-top: 56px;
         font-size: 18px;
         letter-spacing: 0;
@@ -367,8 +380,9 @@ body {
       clip-path: polygon(0% 5%, 100% 0%, 100% 83%, 0% 100%); }
       body .episodios h1 {
         margin-left: 200px;
+        margin-bottom: 26px;
         padding-top: 186px;
-        padding-bottom: 26px;
+        padding-bottom: 0;
         font-size: 48px;
         color: #FFFFFF;
         letter-spacing: 0;
@@ -393,7 +407,7 @@ body {
       top: -190px; }
       body .historia .imagen-phone {
         width: 457.6px;
-        height: 606;
+        height: 606px;
         margin-left: 200px;
         margin-right: 62.4px; }
       body .historia .venimos {
@@ -425,11 +439,14 @@ body {
       padding: 0; }
       body .temas #tituloTemas {
         width: 986px;
-        padding-left: 200px;
+        margin-left: 200px;
+        margin-top: 64px;
+        margin-bottom: 56px;
         font-family: "IBM Plex Sans";
         font-size: 48px;
         color: #060A24;
-        letter-spacing: 0; }
+        letter-spacing: 0;
+        padding: 0; }
       body .temas .tipos-clasificacion {
         display: flex;
         flex-direction: row;
@@ -472,12 +489,29 @@ body {
         line-height: 24px; }
         body .novedades #escuchar:hover {
           color: #FFFFFF; }
-    body footer {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding-top: 15px;
+    body .pie {
+      margin-bottom: 31px;
       margin-left: 100px;
-      margin-right: 62px; } }
+      margin-top: 36px; }
+      body .pie footer {
+        display: flex;
+        flex-direction: row;
+        height: 28px; }
+        body .pie footer p {
+          text-align: left;
+          width: 269px;
+          font-size: 16px;
+          color: #060A24;
+          letter-spacing: 0;
+          line-height: 28px;
+          font-family: "IBM Plex Mono";
+          margin-right: 739px;
+          margin-top: 0; }
+        body .pie footer .redes {
+          margin-right: 68px;
+          margin-left: 0px;
+          margin-top: 0; }
+          body .pie footer .redes .fab {
+            padding-right: 32px; } }
 
 /*# sourceMappingURL=style.css.map */

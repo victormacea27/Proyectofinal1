@@ -6,7 +6,6 @@ body {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-
     .bienvenida{
         margin: 50px 16px 24px 16px;
         h1{
@@ -31,9 +30,15 @@ body {
             line-height: 22px;
             font-family: $font-titleMono;
             text-align: justify;
-            padding-top: 16px;
-            
-            span{
+            #texto-movil{
+                display: initial;
+                font-family: $font-titleMono;
+                font-size: 14px;
+                color: $color-black-blue;
+                letter-spacing: 0;
+                line-height: 22px;
+            }
+            #texto-escritorio{
                 display: none;
             }
         }
@@ -142,7 +147,6 @@ body {
                 height: 243px;
             }
         }
-
     }
         /* temas*/
     .temas{
@@ -213,7 +217,7 @@ body {
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 31px;
         p{
             font-size: 14px;
             font-family: $font-titleMono;
